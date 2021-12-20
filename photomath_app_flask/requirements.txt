@@ -1,0 +1,8 @@
+Flask
+imageio
+Keras
+numpy==1.19.5
+opencv-python-headless==4.2.0.32
+tensorflow-cpu==2.7.0
+Pillow
+gunicorn
