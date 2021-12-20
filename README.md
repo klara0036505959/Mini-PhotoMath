@@ -50,7 +50,8 @@ note: this can only be possible while heroku server is running
    python test_model.py [--model_path [MODEL_PATH]] [--img_path [IMAGE_PATH]]
    
     --model_path        Path to the saved model 
-                        (some models are already trained, check out trained_models directory in this repo)
+                        (some models are already trained, check out trained_models directory in this repo,
+                        currently the best performing model is "my_model_good_final.h5")
     --img_path          Path to the image you want to run prediction on 
                         (there are already some test images in the test_images directory in this repo)                             
    ``` 
@@ -64,6 +65,18 @@ note: this can only be possible while heroku server is running
 * <b>version_custom_dataset: </b> model trained on a custom-made dataset (by me)
 * <b>version_mnist_kaggle: </b> model trained on a dataset which is made by merging MNIST and a part of a Kaggle dataset (https://www.kaggle.com/xainano/handwrittenmathsymbols)
  
+                          
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+<!-- Comments & possible improvements -->
+## Comments & possible improvements
+
+* find better hyperparameters for this CNN model (random search, grid search or a similar approach)
+* make a bigger custom dataset
+* model trained on MNIST + Kaggle (60k+ images) is not performing well - find a better model architecture
+* metrics used to evaluate model on validation dataset: accuracy -> would be useful to also track recall, precision, F1 score and confusion matrix
                           
 
 <p align="right">(<a href="#top">back to top</a>)</p>
