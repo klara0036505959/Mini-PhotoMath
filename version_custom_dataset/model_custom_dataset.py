@@ -15,8 +15,9 @@ import pandas as pd
 import PIL
 import tensorflow as tf
 from tensorflow.keras.layers.experimental.preprocessing import Rescaling
+import os
 
-directory = 'custom_dataset_prepared'
+directory = os.path.dirname(os.path.abspath(__file__)) + '\\custom_dataset_prepared'
 
 batch_size = 2
 img_height = 28

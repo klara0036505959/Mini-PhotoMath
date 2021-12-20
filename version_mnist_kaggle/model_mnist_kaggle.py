@@ -14,6 +14,7 @@ import numpy as np
 import pandas as pd
 import sys
 import argparse
+import os
 
 def load_data(class_labels, data_name, label_name, train=0.85, val=0.15, one_hot_enc = False):
     '''Function to Load data from .npy files and split them into training and validation sets '''
@@ -62,7 +63,7 @@ class_labels = {'%': 0, '(': 1, ')': 2, '+': 3, '-': 4, '0': 5, '1': 6, '2': 7, 
 
 
 # Loading data from .npy file and spliting into training and validation sets
-path = 'datasets_npy\\'
+path = os.path.dirname(os.path.abspath(__file__)) + '\\datasets_npy\\'
 data = {"train": 0, "val":0}
 labels = {"train": 0, "val":0}
 
