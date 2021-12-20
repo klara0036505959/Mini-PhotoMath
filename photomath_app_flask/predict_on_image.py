@@ -8,12 +8,6 @@ from photomath_app_flask.string_eval_expression import *
 #from preprocess import rescale_segment as rescale_segment
 #from preprocess import extract_segments as extract_segments
 def rescale_segment( segment, size = [28,28], pad = 0 ):
-    '''function for resizing (scaling down) images
-    input parameters
-    seg : the segment of image (np.array)
-    size : out size (list of two integers)
-    output 
-    scaled down image'''
     if len(segment.shape) == 3 : # Non Binary Image
         import cv2
         # thresholding the image
