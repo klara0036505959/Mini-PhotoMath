@@ -13,14 +13,14 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model_path",
         type=str,
-        required=True,
+        default="trained_models/my_model_good_final.h5",
         help="Path to the saved model",
     )
 
     parser.add_argument(
         "--img_path",
         type=str,
-        default="icboard",
+        required=True,
         help="Path to the image containing a math expression",
     )
     args = parser.parse_args()
