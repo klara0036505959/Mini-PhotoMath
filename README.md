@@ -62,7 +62,7 @@ note: this can only be possible while heroku server is running
 * <b>jupyter_notebooks: </b> results of testing some images are already visible
 * <b>photomath_app_flask: </b> every piece of code needed for putting the model on the cloud (for example: heroku), written using Flask
 * <b>version_custom_dataset: </b> model trained on a custom-made dataset (by me)
-* <b>version_mnist_kaggle: </b> model trained on a dataset which is made by merging MNIST and a Kaggle dataset (https://www.kaggle.com/xainano/handwrittenmathsymbols)
+* <b>version_mnist_kaggle: </b> model trained on a dataset which is made by merging MNIST and a part of a Kaggle dataset (https://www.kaggle.com/xainano/handwrittenmathsymbols)
  
                           
 
