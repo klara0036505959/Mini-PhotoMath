@@ -29,8 +29,6 @@
 * Android Studio
 * JDK 11 (or later)
 * Android SDK
-note: this can only be possible while heroku server is running
-
 
 <b>You can also run this project locally on your PC:</b>
 * Python >= 3.8
