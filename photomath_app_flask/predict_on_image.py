@@ -4,7 +4,7 @@ import itertools
 import PIL
 import tensorflow as tf
 from PIL import Image
-from string_eval_expression import *
+from photomath_app_flask.string_eval_expression import *
 #from preprocess import rescale_segment as rescale_segment
 #from preprocess import extract_segments as extract_segments
 def rescale_segment( segment, size = [28,28], pad = 0 ):
@@ -113,6 +113,7 @@ def do_prediction(putanja_slike, putanja_model):
         img_np = img_np /255
         img_array = np.expand_dims(img_np, axis=0)
         img_array = tf.convert_to_tensor(img_array, dtype=tf.float32)
+        img_array = tf.expand_dims(img_array, axis=-1)
 
         predictions = model.predict(img_array)
         score = tf.nn.softmax(predictions[0])
@@ -132,5 +133,5 @@ def do_prediction(putanja_slike, putanja_model):
     except:
       return final_predictions, ""
     
-    return final_predictions, ""
+   
 
